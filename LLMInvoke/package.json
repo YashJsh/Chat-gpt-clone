@@ -1,0 +1,17 @@
+{
+  "name": "llminvoke",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@tavily/core": "^0.6.0",
+    "groq-sdk": "^0.37.0",
+    "zod": "^4.1.13"
+  }
+}
