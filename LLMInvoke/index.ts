@@ -21,12 +21,7 @@ const tvly = tavily({ apiKey: process.env.TAVILY_API_KEY });
 const webSearch = async ({ query }: { query: string }) => {
     const response = await tvly.search(query);
     const finalResult = response.results.map((a) => a.content).join('\n\n');
-    return finalResult
-}
-
-interface message {
-    role : "system" | "user" | "developer",
-    content : string
+    return finalResult;
 }
 
 async function main() {
